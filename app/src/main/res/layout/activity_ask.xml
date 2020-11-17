@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Ask"
+    >
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="409dp"
+        android:layout_height="85dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="408dp"
+        android:layout_height="88dp"
+        android:background="#5199CC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="WHO ARE YOU ?"
+        android:textColor="#070707"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    <Button
+        android:id="@+id/teacher"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shape"
+        android:text="I AM A TEACHER"
+
+        android:textColor="#070707"
+        android:fontFamily="sans-serif-condensed-medium"
+        app:backgroundTint="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/student"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="I AM A STUDENT"
+        android:textColor="#070707"
+        android:background="@drawable/shape"
+        android:fontFamily="sans-serif-condensed-medium"
+        app:backgroundTint="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="@+id/teacher"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/teacher"
+        app:layout_constraintTop_toBottomOf="@+id/teacher" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
