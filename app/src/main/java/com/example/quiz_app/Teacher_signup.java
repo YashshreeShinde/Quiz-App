@@ -13,7 +13,7 @@ private Button teacher_log;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teacher_signup);
-        teacher_log=(Button)findViewById(R.id.student_sign);
+        teacher_log=(Button)findViewById(R.id.teacher_sign);
         teacher_log.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
