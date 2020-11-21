@@ -9,14 +9,22 @@
     tools:context=".MainActivity">
 
     <View
+        android:id="@+id/view4"
+        android:layout_width="406dp"
+        android:layout_height="71dp"
+        android:background="#5199cc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
         android:id="@+id/view2"
         android:layout_width="0dp"
         android:layout_height="100dp"
-        android:background="@drawable/black"
+        android:background="@drawable/round_wave"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
 
     <TextView
         android:id="@+id/textView"
@@ -38,11 +46,11 @@
         android:id="@+id/editTextTextEmailAddress"
 
 
-        android:layout_width="200dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:drawableStart="@drawable/email"
-        android:drawableLeft="@drawable/email"
+        android:layout_marginTop="32dp"
+
+
         android:drawablePadding="7dp"
         android:ems="10"
 
@@ -51,7 +59,7 @@
 
         android:textSize="13sp"
         app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -59,10 +67,10 @@
         android:id="@+id/editTextTextPassword"
 
 
-        android:layout_width="200dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:drawableLeft="@drawable/lock"
+
         android:drawablePadding="7dp"
         android:ems="10"
         android:hint="Password"
@@ -99,7 +107,7 @@
         android:layout_marginTop="20dp"
         android:text="New User?"
         android:textColor="#000000"
-        android:textSize="25sp"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="@+id/login"
         app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="@+id/login"
@@ -107,10 +115,10 @@
 
     <Button
         android:id="@+id/ask"
-        android:layout_width="210dp"
+        android:layout_width="250dp"
 
         android:layout_height="40dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:background="@drawable/shape"
 
         android:text="Sign Up"
@@ -119,7 +127,7 @@
 
         app:backgroundTint="#a2d9ff"
         app:layout_constraintEnd_toEndOf="@+id/newUser"
-        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="@+id/newUser"
         app:layout_constraintTop_toBottomOf="@+id/newUser" />
 
